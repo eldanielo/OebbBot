@@ -1,0 +1,2883 @@
+{
+  "luis_schema_version": "1.2.0",
+  "name": "oebb",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "Name": "GoTo",
+      "Children": []
+    },
+    {
+      "Name": "None",
+      "Children": []
+    },
+    {
+      "Name": "hi",
+      "Children": []
+    }
+  ],
+  "entities": [
+    {
+      "Name": "Number",
+      "Children": []
+    },
+    {
+      "Name": "Start",
+      "Children": []
+    },
+    {
+      "Name": "all",
+      "Children": []
+    },
+    {
+      "Name": "Person",
+      "Children": []
+    },
+    {
+      "Name": "vehicle",
+      "Children": [
+        "car",
+        "motorcycle",
+        "bicycle"
+      ]
+    },
+    {
+      "Name": "Destination",
+      "Children": []
+    },
+    {
+      "Name": "vorteilscard",
+      "Children": [
+        "jugend",
+        "classic",
+        "family",
+        "senior"
+      ]
+    }
+  ],
+  "bing_entities": [
+    "geography",
+    "datetime"
+  ],
+  "actions": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "book ticket to paris at tomorrow at 5 for 6 people and 2 cars as well as 3 motorcycles and 2 bikes",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 10,
+          "endPos": 10
+        },
+        {
+          "entity": "Number",
+          "startPos": 9,
+          "endPos": 9
+        },
+        {
+          "entity": "Number",
+          "startPos": 12,
+          "endPos": 12
+        },
+        {
+          "entity": "Number",
+          "startPos": 17,
+          "endPos": 17
+        },
+        {
+          "entity": "Number",
+          "startPos": 20,
+          "endPos": 20
+        },
+        {
+          "entity": "Destination",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 13,
+          "endPos": 13
+        },
+        {
+          "entity": "vehicle::motorcycle",
+          "startPos": 18,
+          "endPos": 18
+        },
+        {
+          "entity": "vehicle::bicycle",
+          "startPos": 21,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "get a flight to amsterdam",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "book ticket to paris at tomorrow at 5 for 6 people and 2 cars as well as 3 motorcycles",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 10,
+          "endPos": 10
+        },
+        {
+          "entity": "Number",
+          "startPos": 9,
+          "endPos": 9
+        },
+        {
+          "entity": "Number",
+          "startPos": 12,
+          "endPos": 12
+        },
+        {
+          "entity": "Number",
+          "startPos": 17,
+          "endPos": 17
+        },
+        {
+          "entity": "Destination",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 13,
+          "endPos": 13
+        },
+        {
+          "entity": "vehicle::motorcycle",
+          "startPos": 18,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "get a chooper to amsterdam",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i want to fly to vienna from amsterdam",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Start",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "book train to paris for 5. all of us have bikes",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "all",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "all",
+          "startPos": 8,
+          "endPos": 8
+        },
+        {
+          "entity": "all",
+          "startPos": 9,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "book train to paris. we have bikes",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "all",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "vehicle::bicycle",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "book train to paris at 5 for 2 with 1 car. we have vorteilscard",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "all",
+          "startPos": 12,
+          "endPos": 12
+        },
+        {
+          "entity": "Number",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Number",
+          "startPos": 9,
+          "endPos": 9
+        },
+        {
+          "entity": "Destination",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 10,
+          "endPos": 10
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 14,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "book a taxi to amsterdam with 7 bikes",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "book train to paris. all of us have car",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "all",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "all",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "all",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 9,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "book tickets to paris for me and my friend with a car and 2 bicycles tomorrow at 5. we have to 2 vorteilscards",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Person",
+          "startPos": 8,
+          "endPos": 8
+        },
+        {
+          "entity": "Number",
+          "startPos": 13,
+          "endPos": 13
+        },
+        {
+          "entity": "Number",
+          "startPos": 22,
+          "endPos": 22
+        },
+        {
+          "entity": "Destination",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 11,
+          "endPos": 11
+        },
+        {
+          "entity": "vehicle::bicycle",
+          "startPos": 14,
+          "endPos": 14
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 23,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "book tickets to paris for me and my friend with a car and 2 bikes tomorrow at 5. we have to 2 vorteilscards",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Person",
+          "startPos": 8,
+          "endPos": 8
+        },
+        {
+          "entity": "Number",
+          "startPos": 13,
+          "endPos": 13
+        },
+        {
+          "entity": "Number",
+          "startPos": 22,
+          "endPos": 22
+        },
+        {
+          "entity": "Destination",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 11,
+          "endPos": 11
+        },
+        {
+          "entity": "vehicle::bicycle",
+          "startPos": 14,
+          "endPos": 14
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 23,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "book a helicopter to amsterdam and 3 jets",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "book tickets to paris for me and my friend with a car tomorrow at 5. we have to 2 vorteilscard and a bike. also don't forget the motorcycle",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Person",
+          "startPos": 8,
+          "endPos": 8
+        },
+        {
+          "entity": "Number",
+          "startPos": 19,
+          "endPos": 19
+        },
+        {
+          "entity": "Destination",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 11,
+          "endPos": 11
+        },
+        {
+          "entity": "vehicle::motorcycle",
+          "startPos": 31,
+          "endPos": 31
+        },
+        {
+          "entity": "vehicle::bicycle",
+          "startPos": 23,
+          "endPos": 23
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 20,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "get a flight to amsterdam with 3 bags",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "book tickets to paris for me and my friend with 1 car and 2 motorcycles tomorrow at 5. also 3 bicycles",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Person",
+          "startPos": 8,
+          "endPos": 8
+        },
+        {
+          "entity": "Number",
+          "startPos": 10,
+          "endPos": 10
+        },
+        {
+          "entity": "Number",
+          "startPos": 13,
+          "endPos": 13
+        },
+        {
+          "entity": "Number",
+          "startPos": 20,
+          "endPos": 20
+        },
+        {
+          "entity": "Destination",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 11,
+          "endPos": 11
+        },
+        {
+          "entity": "vehicle::motorcycle",
+          "startPos": 14,
+          "endPos": 14
+        },
+        {
+          "entity": "vehicle::bicycle",
+          "startPos": 21,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "i want to go paris with my wife",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "book ticket for me and my 3 wifes. we have 6 vorteilcards",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Person",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Number",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Number",
+          "startPos": 11,
+          "endPos": 11
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 12,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "book ticket for 2 persons with 2 vorteilscard to parsi",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Number",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Number",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Destination",
+          "startPos": 9,
+          "endPos": 9
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "book 5 tickets to amsterdam with 5 bikes",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Number",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "book ticket for 3 people with vorteilscard to paris",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Number",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Destination",
+          "startPos": 8,
+          "endPos": 8
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "get a train for 8 people and five motorbikes",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Number",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Number",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "vehicle::motorcycle",
+          "startPos": 8,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "book ticket for me and my 3 wifes to paris. we have 6 vorteilcards and 3 cars",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Person",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Number",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Number",
+          "startPos": 13,
+          "endPos": 13
+        },
+        {
+          "entity": "Number",
+          "startPos": 16,
+          "endPos": 16
+        },
+        {
+          "entity": "Destination",
+          "startPos": 9,
+          "endPos": 9
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 17,
+          "endPos": 17
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 14,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "get a train for seven people and 7 cars",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Number",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Number",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 8,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "book ticket to paris for me and my 2 friends",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Person",
+          "startPos": 9,
+          "endPos": 9
+        },
+        {
+          "entity": "Number",
+          "startPos": 8,
+          "endPos": 8
+        },
+        {
+          "entity": "Destination",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "book a train for 20 people and three cars to amsterdam",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Number",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Number",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Destination",
+          "startPos": 10,
+          "endPos": 10
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 8,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "book ticket for me, joe and kate",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Person",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Person",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "when is the next car train",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "vehicle::car",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "when is the a train to amsterdam with car",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "vehicle::motorcycle",
+          "startPos": 8,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "book ticket for me and my wife from vienna to amsterdam. we have a car and i have a vorteilscard",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Person",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Destination",
+          "startPos": 10,
+          "endPos": 10
+        },
+        {
+          "entity": "Start",
+          "startPos": 8,
+          "endPos": 8
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 15,
+          "endPos": 15
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 20,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "get 3 tickets to amsterdam with 3 bikes",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Number",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "get a train for me and joe. we have 2 vorteilscard and one car",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Person",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Number",
+          "startPos": 10,
+          "endPos": 10
+        },
+        {
+          "entity": "Number",
+          "startPos": 13,
+          "endPos": 13
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 14,
+          "endPos": 14
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 11,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "book 3 tickets with one car 1 bicycle and a motorbicycle",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Number",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "vehicle::motorcycle",
+          "startPos": 10,
+          "endPos": 10
+        },
+        {
+          "entity": "vehicle::bicycle",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "get a train with a car and a vorteilscard",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "vehicle::car",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 8,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "book a ticket with motorcycle",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "vehicle::motorcycle",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "me and my friend want to go vienna from salzburg at 5 with 2 vorteilscards and 2 bikes",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Person",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Number",
+          "startPos": 13,
+          "endPos": 13
+        },
+        {
+          "entity": "Number",
+          "startPos": 16,
+          "endPos": 16
+        },
+        {
+          "entity": "Destination",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Start",
+          "startPos": 9,
+          "endPos": 9
+        },
+        {
+          "entity": "vehicle::bicycle",
+          "startPos": 17,
+          "endPos": 17
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 14,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "get train to amsterdam with motorcylce",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "vehicle::motorcycle",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "get a train to amsterdam with two bycicles",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "vehicle::bicycle",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "book ticket to paris",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "book train for 5 and 7 vorteilscards",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "book a train to go home",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "book a train from vienna to home",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Start",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "ook ticket to paris",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i have a vorteilscard and want to go to vienna",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 9,
+          "endPos": 9
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "sdfasdf",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "when is the next car train to amsterdam",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "order food to my place",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "book a stripper",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "book a train to amsterdam",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "book ticket to amsterdam for me and joe and 2 motorbikes. we have 2 vorteilscards",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Person",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Number",
+          "startPos": 9,
+          "endPos": 9
+        },
+        {
+          "entity": "Number",
+          "startPos": 14,
+          "endPos": 14
+        },
+        {
+          "entity": "Destination",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "vehicle::motorcycle",
+          "startPos": 10,
+          "endPos": 10
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 15,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "me and my wife want to go to graz at noon with 2 vorteilscards",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Person",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Number",
+          "startPos": 12,
+          "endPos": 12
+        },
+        {
+          "entity": "Destination",
+          "startPos": 8,
+          "endPos": 8
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 13,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "me and family want to go to amsterdam tomorrow with one car",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Person",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Number",
+          "startPos": 10,
+          "endPos": 10
+        },
+        {
+          "entity": "Destination",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "book a ticket to salzburg at 5:00",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i want to go from vienna to amsterdam",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Start",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "book 2 tickets with 2 cars",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Number",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "book 2 tickets with 2 discounts",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Number",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "when is the next train going to amsterdam from graz",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Start",
+          "startPos": 9,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "book 2 tickets with 2 vorteilscard",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Number",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "book a ticket to salzburg tomorow at 5:00",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "book a ticket for me with a vorteilscard",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "book a ticket for me and 3 others",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Number",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "book a train to klagenfurt tomorow",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "builtin.datetime.time",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "book a ticket for me and seven other poeple",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Person",
+          "startPos": 8,
+          "endPos": 8
+        },
+        {
+          "entity": "Number",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "book a ticket for my husband and me",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Person",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "book a ticket for my seven wives and me to amsterdam",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Person",
+          "startPos": 8,
+          "endPos": 8
+        },
+        {
+          "entity": "Number",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Destination",
+          "startPos": 10,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "book a ticket for me and my 2 girls to amsterdam",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Person",
+          "startPos": 8,
+          "endPos": 8
+        },
+        {
+          "entity": "Number",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Destination",
+          "startPos": 10,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "oebbbot was added to the conversation",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "get a ticket for me and my family to amsterdam",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Person",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Destination",
+          "startPos": 9,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "new[] { \"morning (am)\", \"afternoon (pm)\", \"any\" }, \"what time of day would you like us to book the appointment? (am/pm/any)\"",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 33,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "get a ticket for me and my daughter to amsterdam",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Person",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Destination",
+          "startPos": 9,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "book a ticket for kate to amsterdam",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Destination",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "book a ticket with a car",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "vehicle::car",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "jack and daniel want to go to amsterdam",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Person",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Destination",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "book a train rudolf to amsterdam",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Destination",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "book ticket for daniel to amsterdam",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Destination",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "book a ticket for me to amsterdam",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Destination",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "book a ticket for john to amsterdam",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Destination",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "book a ticket for me and my friend to amsterdam",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Person",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Destination",
+          "startPos": 9,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "book one ticket and three cars",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Number",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "me and my john want to go to amsterdam",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Person",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Destination",
+          "startPos": 8,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "book a ticket to amsterdam. i have a vorteilscard",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 9,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "get a train to loldongs with a bike",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "vehicle::bicycle",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "book 6 tickets and 1 car",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Number",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "book a ticket to paris and a car",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "go to amsterdam with a car",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "book train to amsterdam with a motorcycle",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "vehicle::bicycle",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "get train to amsterdam with 3 cars",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Destination",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "book 7 tickets",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "book ticket for 2 and a car to amsterdam",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Destination",
+          "startPos": 8,
+          "endPos": 8
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "book 80 tickets to paris with 3 cars",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Number",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "when is the next train to amsterdam where i can bring my bike",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "vehicle::bicycle",
+          "startPos": 12,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "book eight tickets",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "i want to go to amsterdam from vienna",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Start",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "book 2 tickets to paris",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "when is the next motorcycle train",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "vehicle::motorcycle",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "book a train to amsterdam with a car and a motorbike and 2 bikes and 1 vorteilscard",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 12,
+          "endPos": 12
+        },
+        {
+          "entity": "Number",
+          "startPos": 15,
+          "endPos": 15
+        },
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "vehicle::motorcycle",
+          "startPos": 10,
+          "endPos": 10
+        },
+        {
+          "entity": "vehicle::bicycle",
+          "startPos": 13,
+          "endPos": 13
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 16,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "book 2 tickets to paris with one car",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Number",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "book a ticket to paris for 2 persons",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "dfasd",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "book a ticket from vienna to graz for 2 people",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 9,
+          "endPos": 9
+        },
+        {
+          "entity": "Destination",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Start",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "oder a meal in vienna",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "book a ticket to salzburg on 21.jan.2016",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "get a train to amsterdam for 2 people with 2 cars and 2 vorteilscard",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Number",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Number",
+          "startPos": 9,
+          "endPos": 9
+        },
+        {
+          "entity": "Number",
+          "startPos": 12,
+          "endPos": 12
+        },
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 10,
+          "endPos": 10
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 13,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "get train to amsterdam with a bike",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "vehicle::bicycle",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "fsad",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "order ham home",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "book a train to salzburg at 5",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "book a train to siegendorf",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "get a ride home",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "book a to venice today",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "book a train to kahlendorf",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "book a train to kalenbergdorf",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i want to book a train from here to home",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 9,
+          "endPos": 9
+        },
+        {
+          "entity": "Start",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "i want to go home with my car and my vorteilscard",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 10,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "book ticket to paris for 2 with 2 motorcycles",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Number",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Destination",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "vehicle::motorcycle",
+          "startPos": 8,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "book a ticket to salzburg tomorrow at 5:00",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "go to paris with jack",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Destination",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "book a party",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "dfasdf",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "book ticket to amsterdam for me and joe and 2 motorbikes",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Person",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Number",
+          "startPos": 9,
+          "endPos": 9
+        },
+        {
+          "entity": "Destination",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "vehicle::motorcycle",
+          "startPos": 10,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "order food",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to go from home to amsterdam",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Start",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "book a ticket to salzburg at 5",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "book a ticket for 2 to amsterdam. 2 vorteilscards",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Number",
+          "startPos": 8,
+          "endPos": 8
+        },
+        {
+          "entity": "Destination",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 9,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "book a ticket for me with a discount",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "i want to book 3 tickets. 2 cars",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Number",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "vehicle::car",
+          "startPos": 8,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "book a ticket for me and my son to amsterdam",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Person",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Destination",
+          "startPos": 9,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "fly daniel to amsterdam",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Destination",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "book tickets for me jack and jill to amsterdam.",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Person",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Person",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Destination",
+          "startPos": 8,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "book a ticket with a car and a vorteilscard",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "vehicle::car",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 8,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "get a ticket from vienna to graz",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Start",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "book one ticket to paris",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "book three tickets to amsterdam",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "book nine tickets",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "i want to go home",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "book a train from wien to zürich tomorrow at 7:00",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Start",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "1",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to go from vienna to graz",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Start",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "buy movie tickets in graz",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "book a train from heiligenstadt to hütteldorf",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Start",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "book a train to klingenbach",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "book five tickets",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "i want to book a train from vienna to berlin",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 9,
+          "endPos": 9
+        },
+        {
+          "entity": "Start",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "book a trip to amsterdam",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "book tickets to venice",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Destination",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "book a train around 5 for me and joe to zürich from vienna. we have 2 motorbikes and a vorteilscard",
+      "intent": "GoTo",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Person",
+          "startPos": 8,
+          "endPos": 8
+        },
+        {
+          "entity": "Number",
+          "startPos": 16,
+          "endPos": 16
+        },
+        {
+          "entity": "Destination",
+          "startPos": 10,
+          "endPos": 10
+        },
+        {
+          "entity": "Start",
+          "startPos": 12,
+          "endPos": 12
+        },
+        {
+          "entity": "vehicle::motorcycle",
+          "startPos": 17,
+          "endPos": 17
+        },
+        {
+          "entity": "vorteilscard",
+          "startPos": 20,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "hi",
+      "intent": "hi",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "hi",
+      "entities": []
+    },
+    {
+      "text": "how are you",
+      "intent": "hi",
+      "entities": []
+    },
+    {
+      "text": "hey",
+      "intent": "hi",
+      "entities": []
+    }
+  ]
+}
